@@ -1,0 +1,18 @@
+.head{
+    padding: 17px;
+}
+.local_nav{
+    background-color: gray;
+    color: white;
+}
+.heading_1, .heading_2{
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.local_card{
+    background-color: lightgray;
+}
+@media{min-width: ;
+
+    
+}

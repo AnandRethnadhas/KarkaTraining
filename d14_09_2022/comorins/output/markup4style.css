@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* border: 1px solid red; */
+}
+header{
+    width: 100%;
+    /* border: 1px solid red; */
+    text-align: center ;
+    padding-top: 20px;
+}
+.slo{
+    padding:20px;
+}
+.column{
+    /* border: 1px solid red; */
+    display: inline-block;
+    padding: 15px;
+}
+.img{
+    height: 200px;
+    width: 100%;
+    border: 1 solid purple;
+}
+.last{
+    /* padding-left: 500px; */
+}
+.grid{
+    text-align: left;
+    background-color: black;
+    color: aliceblue;
+    /* float: left; */
+    
+}
+ul li:last-child{
+    float:right;
+}
+section{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.div12{
+    padding-top: 30px;
+    /* border: 1px solid blue; */
+    /* background-color: gray; */
+
+}
+.div12{
+    /* padding-top: 30px; */
+}
+.div1{
+    display: inline-block;
+    /* padding: 30px; */
+    /* background-color: darkseagreen; */
+    /* border: 1px solid violet; */
+}
+/* .div11{
+    padding: 20px;
+} */
+.div2{
+    display: inline-block;
+    vertical-align: top;
+    /* padding: 30px; */
+    /* border: 1px solid blue; */
+}
+div{
+    /* border: 1px solid blue; */
+}
+.aboutme{
+    height: 150px;
+    padding: 5px;
+}
+.post{
+    padding: 5px;
+}
+.follow{
+    padding: 5px;
+}
+.img_right{
+    height: 100px;
+    width: 200px;   
+}
+.img_right2{
+    height: 100px;
+    width: 200px;   
+}
+footer{
+    margin: 0;
+    text-align: center;
+    color: aliceblue;
+    background-color: cadetblue;
+}

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0 ;
+}
+    header{
+    background-color: brown;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+    padding: 30px;
+}
+nav{
+    background-color: coral;
+    text-align: center;
+    color: aliceblue;
+}
+.grid{
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+.column1{
+    background-color: cadetblue;
+    display: inline-block;
+    height: 200px;
+    width: 50%;
+}
+.column2{
+    background-color: chartreuse;
+    display: inline-block;
+    height: 200px;
+    width: 30%;
+}
+
+
+
+
+footer{
+    background-color: darksalmon;
+    text-align: center;
+    color: aliceblue;
+}

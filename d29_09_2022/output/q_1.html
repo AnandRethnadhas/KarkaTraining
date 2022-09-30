@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<!-- 
+1. What number's bigger?
+● Write a function named greaterNum that:
+○ takes 2 arguments, both numbers.
+○ returns whichever number is the greater (higher) number.
+● Call that function 2 times with different number pairs, and log the output
+to make sure it works (e.g. "The greater number of 5 and 10 is 10."). -->
+
+    <script>
+        let no_1=12,no_2=11,no_3=88,no_4=-11;
+        function greaterNum(one,two) {
+          let greater=0;
+          if(one>two){
+            greater=one;
+          }
+          else if(two>one){
+            greater=two;
+          }
+          else if(one==two){
+            greater="both are equal";
+          }
+          return greater;
+        }
+        greater=greaterNum(no_1,no_2);
+        console.log("The greater number of " + no_1 + " and " + no_2 + " is " + greater + ".");
+        greater=greaterNum(no_3,no_4);
+        console.log("The greater number of " + no_3 + " and " + no_4 + " is " + greater + ".");
+
+    </script>
+</body>
+</html>

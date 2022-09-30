@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+
+        7. Write a JS code to print Even numbers in given array
+Function `printEven()` prints all the even numbers of a 2D array using for
+loops and ‘%’ operator.
+
+     -->
+
+
+
+     <script>
+        let print_arr=[
+            [45,67,87,66,90],
+            [55,62,80,74,51]
+            ];
+        function printEven(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr[i].length; j++) { 
+                    if(arr[i][j] % 2 == 0){
+                        console.log(arr[i][j]);
+                    }
+                    
+                }
+            }
+        }
+        printEven(print_arr)
+     </script>
+</body>
+</html>

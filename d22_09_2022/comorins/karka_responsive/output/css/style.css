@@ -1,0 +1,17 @@
+body{
+    /* border: 1px solid purple; */
+}
+.ul_deco{
+background-color: black;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 27px;
+line-height: 32px;
+color: #ffffff;
+padding: 48px 151px 49px 152px;
+/* padding-top: 48px;
+padding-bottom: 49px;
+padding-left: 152px;
+padding-right: 151px; */
+}

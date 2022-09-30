@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- 
+    9. Write a JS code to find the number of zeros in 2D Matrix
+Program to find count number for zeros in 2d matrix using nested for loops
+and increment operation.
+ -->
+
+
+<script>
+
+let print_arr=[
+            [45,0,87,0,0],
+            [0,62,0,74,0]
+            ];
+            zeros=0;
+
+        function totalZeros(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr[i].length; j++) { 
+                    if(arr[i][j] == 0){
+                        zeros++;
+                    }
+                }
+            }
+            return zeros;
+        }
+
+        zeros=totalZeros(print_arr);
+        console.log("No. of zero(s) - " + zeros);
+</script>
+
+
+</body>
+</html>

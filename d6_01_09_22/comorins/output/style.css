@@ -1,0 +1,83 @@
+/* common styles starts here */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: cadetblue;
+}
+.menu{
+    width: 100%;
+    text-align: center;
+    background-color: darkgrey;
+    padding: 12px;
+}
+.aherf{
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px;
+}
+li{
+    display: inline-block;
+    color: aliceblue;
+}
+ul{
+    text-decoration: none;
+}
+
+/* common styles ends here */
+
+
+/* index style starts here  */
+
+h1{
+    color: gray;
+}
+
+/* index style ends here  */
+
+/* -------------------------------------------------- */
+
+/* form style starts here  */
+.input_form{
+    width: 50%;
+    margin: 0 auto;
+
+}
+.inputfirst{
+    width: 200px;
+    display: inline-block;
+    border-bottom: 1px solid yellow;
+}
+
+
+textarea{
+    border: 1px solid black;
+    border-bottom: 1px solid yellow;
+}
+
+
+/* form style ends here */
+/* --------------------------------------------------- */
+
+/* display style starts here */
+
+.disp_div1{
+    background-color:yellow;
+}
+
+
+/* iframe style starts here */
+
+iframe{
+    width: 1000px;
+    height:1500px;
+}
+
+/* iframe style ends here */
+/* --------------------------------------------- */

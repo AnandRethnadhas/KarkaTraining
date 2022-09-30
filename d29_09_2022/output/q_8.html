@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- 
+    8. Write a JS code to find the largest number in an array
+Program to find the largest number in the given 1D array.
+ -->
+
+ <script>
+
+    let print_arr=[45,67,87,66,90,55,62,80,74,51,98];
+    largest=0;
+
+    function findLargest(arr) {
+        largest=arr[0];
+        for (let i = 0; i < arr.length; i++) {
+                if(largest < arr[i+1]){
+                    largest=arr[i+1];
+                }
+            }
+            return largest;
+    }
+    largest=findLargest(print_arr);
+    console.log(largest);
+    
+ </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: darkgrey;
+}
+h1{
+text-align: center;
+color: white;
+padding: 30px;
+margin-bottom: 5px;
+}
+nav{
+    background-color: gray;
+    margin-bottom: 5px;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+section{
+    background-color: gray;
+    margin-bottom: 5px;
+}
+p{
+    text-align: center;
+    color: white;
+}
+div{
+    padding: 40px;
+}
+footer{
+    background-color: gray;
+    text-align: center;
+    color: white;
+}
+.column{
+    display: inline-block;
+    width: 25%;
+    height: 200px;
+    background-color: aliceblue;
+    margin: 5px;
+}

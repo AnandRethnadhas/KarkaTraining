@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+6. Write a JS code to print a 2D array
+Function `printArray()` prints all the elements of a 2D array using nested for
+loops.
+     -->
+     <script>
+        let print_arr=[
+            ["A","B","C","D","E","F"],
+            ["Z","X","C","V","B","N"]
+            ];
+        function printArray(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr[i].length; j++) { 
+                    console.log(arr[i][j]);
+                }
+            }
+        }
+        printArray(print_arr)
+     </script>
+</body>
+</html>

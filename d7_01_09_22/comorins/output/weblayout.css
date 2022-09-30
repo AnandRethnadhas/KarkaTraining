@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 30px;
+    text-align: center;
+    background-color: dimgray;
+    margin-bottom: 10px;
+}
+h1{
+    text-align: center;
+    
+}
+nav{
+    background-color: darkgrey;
+    margin-bottom: 10px;
+}
+section{
+    background-color: darkgray;
+    margin-bottom: 10px;
+    padding: 130px;
+}
+footer{
+    background-color: darkgray;
+    text-align: center;
+    padding: 5px;
+}
+p{
+
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        16. Perform arithmetic operations on two numbers
+Function `evalNumbers()` prints the result after evaluating arithmetic
+operations between two numbers of addition, multiplication, division, and
+modulus in JavaScript.
+1. Print result of num1+num2 if operation is “add”
+2. Print result of num1-num2 if operation is “subtract”
+3. Print result of num1*num2 if operation is “multiply”
+4. Print result of num1/num2 if operation is “divide”
+5. Print result of num1%num2 if operation is “modulus”
+6. Else print “Invalid operation”
+     -->
+
+
+<script>
+fun_result=0;
+function evalNumbers(num_1,num_2,oper){
+    let result=0;
+    if(oper=="+"){
+        result=num_1+num_2;
+        
+    }else if(oper=="-"){
+        result=num_1-num_2;
+    }else if(oper=="*"){
+        
+        result=num_1*num_2;
+    }else if(oper=="/"){
+        
+        result=num_1/num_2;
+    }else if(oper=="%"){
+        
+
+        result=num_1%num_2;
+    }else{
+        result="invalid";
+        
+    }
+    return result;
+}
+
+fun_result=evalNumbers(30,3,"-");
+console.log(fun_result);
+</script>
+
+
+
+</body>
+</html>

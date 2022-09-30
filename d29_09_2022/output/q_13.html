@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+
+        13. Find the largest of three number
+Function `findLargest()` finds the largest of three number by using “>” and
+“&&” operator in JavaScript.
+1. Print num1 is the largest if num1>num2 and num1>num3.
+2. Print num2 is the largest if num2<num3.
+3. Else print num3.
+
+     -->
+
+     <script>
+
+        let no1=90,no2=90,no3=91;
+
+        function findLargest(val_1,val_2,val_3) {
+            let largest=0;
+            if (val_1 > val_2 && val_1 > val_3) {
+                largest=val_1;
+            } else if(val_2 > val_3){
+                largest=val_2;
+            }else{
+                largest=val_3;
+            }
+            return largest;
+        }
+        largest=findLargest(no1,no2,no3);
+        console.log( largest );
+
+
+     </script>
+
+
+</body>
+</html>

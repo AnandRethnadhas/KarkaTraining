@@ -1,0 +1,37 @@
+
+.ul_deco{
+background-color: black;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 27px;
+line-height: 32px;
+color: #ffffff;
+padding: 48px 151px 49px 152px;
+}
+.search_div{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 30px;
+color: #000000;
+}
+
+p{
+    background-color: red;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 23px;
+line-height: 153.19%;
+/* or 35px */
+color: #000000;
+}
+.local_card-body{
+    padding: 0px;
+}
+.card_img{
+    border: 1px solid red;
+    padding: 10px;
+}

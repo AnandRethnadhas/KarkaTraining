@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- 15. Find the a number is present in given range
+Function `checkInRange()` finds if the given number is within the provided
+start and end range using >=, <= and && operators in JavaScript.
+1. Print “Between the range” if num is between start and end
+values
+2. Else Print “Outside the range” since num is outside start and
+end values. -->
+
+
+
+<!-- <form action="">
+    <input id="in_value" type="number"/>
+    <button onclick="checkInRange();">Check</button>
+</form> -->
+
+<script>
+
+    
+    let num_status="";
+    let num=200;
+       
+    function checkInRange() {
+        if (num>=1 && num<=100) {
+            num_status="Between the range from 1 to 100";
+        }else if (num>=101 && num<=500) {
+            num_status="Between the range from 101 to 500";
+        }else{
+            num_status="Outside the range from 1 to 500";
+        }
+        return num_status;
+        }
+
+        checkInRange(num);
+        num_status=checkInRange(num);
+        console.log( num_status );
+
+ </script>
+
+
+</body>
+</html>

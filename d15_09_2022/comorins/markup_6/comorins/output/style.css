@@ -1,0 +1,163 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+/* div{
+    border: 1px solid blue;
+} */
+nav{
+    background-color: #333333;
+    /* height: 129px; */
+}
+header nav ul{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 32px;
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin: 0px;
+}
+header nav li{
+    display: inline-block;
+    color: #FFFEFE;
+    padding-right: 54px;
+}
+.logo{
+    border-bottom: 1px solid;
+}
+.img_karka{
+    display: inline-block;
+    /* padding: 26px 0px 35px 0px; */
+}
+.img_karka img{
+    width: 218px;
+    height: 146px;
+    
+}
+.contact{
+    float: right;
+    margin-right: 3%;
+}
+.cont_1{
+    /* padding-top: 75px; */
+}
+.cont_2{
+    padding-bottom: 45px;
+}
+
+.contact p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+}
+.indo_main{
+    background-color: #F3F2EE;
+    width: 100%;
+}
+.indo_main a{
+    text-decoration: none;
+    color: #6D9D34;
+
+}
+.indo1{
+    display: inline-block;
+    width: 30%;
+    padding-top: 13px;
+    padding-left: 15px;
+    
+}
+.indo2{
+    display: inline-block;
+    width: 30%;
+    padding-top: 13px;
+    padding-left: 10px;
+}
+.indo3{
+    display: inline-block;
+    width: 30%;
+    padding-top: 13px;
+    padding-left: 10px;
+}
+.rect22{
+    /* width: 202px; */
+}
+.amet_1{
+    display: inline-block;
+}
+.sec_1{
+    display: inline-block
+}
+.img_7, .img_9, .img_11{
+    padding: 5px;
+    border: 1px solid #6F6C6C;
+    /* color: #6F6C6C; */
+}
+.sec_2{
+    display: inline-block;
+    width: 30%;
+}
+.sec2{
+    display: inline-block;
+    width: 68%;
+    vertical-align: top;
+}
+.sec21 img{
+    padding: 3%;
+}
+.indo1 img{
+    border: 1px solid #6F6C6C;
+}
+.indo1 p{
+    width: 85%;
+    padding: 1%;
+}
+.indo2 img{
+    border: 1px solid #6F6C6C;
+}
+.indo2 p{
+    width: 85%;
+    padding: 1%;
+}
+.indo3 img{
+    border: 1px solid #6F6C6C;
+}
+.ind03 p{
+    width: 85%;
+    padding: 1%;
+}
+
+.about, .latest, .foot_address{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+.latest .book_img{
+    display: inline-block;
+    width: 30%;
+}
+.about_home{
+    background-color: #333333;
+    color: #B1B1B1;
+}
+.copy, .os{
+    display: inline-block;
+    color: #D7E8B9;
+}
+.copy{
+    text-align: left;
+}
+.os{
+    float: right;
+    /* text-align: right; */
+}
+.image, text{
+    display: inline-block;
+}
+footer{
+    background-color: #777777;
+}

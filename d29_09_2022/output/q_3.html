@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- 
+3. The Grade Assigner
+● Write a function named assignGrade that:
+○ takes 1 argument, a number score.
+○ returns a grade for the score, either "A", "B", "C", "D", or "F".
+● Call that function for a few different scores and log the result to make
+sure it works
+ -->
+
+
+
+
+    <script>
+
+
+        let grade="", mark=[58,35,92,84,40];
+        
+        function assignGrade(score) {
+            if (score<=100 && score>=90) {
+                grade="A";
+            }else if (score<=89 && score>=70) {
+                grade="B";
+            }else if (score<=69 && score>=50) {
+                grade="C";
+            }else if (score<=49 && score>=40) {
+                grade="D";
+            }else if (score<=39 && score>=35) {
+                grade="E";
+            }
+            return grade;
+        }
+
+        for(let i=0;i<mark.length;i++){
+            grade=assignGrade(mark[i]);
+            console.log(grade);
+        }
+
+    </script>
+</body>
+</html>

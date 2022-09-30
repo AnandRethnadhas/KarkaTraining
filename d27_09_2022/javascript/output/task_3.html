@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        let total=0;
+        let percentage=0;
+        let len=0;
+        let resume={
+            name:"anand",
+            personal_details:{
+                contact:94865500,
+                family_details:{
+                    father_name:"Dhas",
+                    mother_name:"bai"
+                }
+            },
+            education:[
+                {
+                    study:"BE",
+                    institute:"NOORUL ISLAM",
+                    mark:80
+                },
+                {
+                    study:"HSC",
+                    institute:"Carmel",
+                    mark:85
+                },
+                {
+                    study:"SSLC",
+                    institute:"LMS",
+                    mark:90
+                }
+            ],
+            skills:["html","javascript","bootstrap","jquery"],
+            certiication:"oracle",
+            experience:"2years",
+            area_of_interest:"client management"
+       };     
+    //    console.log(resume.education.length);
+    //    console.log(resume.education[2].study);
+        let count
+        len=resume.education.length;
+        for(let i=0;i<len;i++){
+            //console.log(resume.education[i].study);
+            if(resume.education[i].study!="SSLC")
+                console.log(resume.education[i].study);
+                total=total+resume.education[i].mark;
+        }  
+        // for(i=0;i<resume.education.length;i++){
+        //     total=total+resume.education[i].mark;
+        // }
+        percentage=total/len;
+        console.log("percentage"+" "+percentage);
+    </script>
+</body>
+</html>

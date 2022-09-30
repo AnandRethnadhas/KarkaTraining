@@ -1,0 +1,39 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.header h1{
+    background-color: black;
+    padding: 20px 0px ;
+    color: white;
+    margin: 0px;
+}
+/* .head_1 h1{
+    padding: 20px 0px;
+} */
+.headnav{
+    background-color: lightgray;
+    color: white;
+}
+.foot{
+    color: white;
+    text-align: center;
+    background-color: lightslategray;
+}
+.main{
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 100px 0px;
+    background-color: lightgray;
+}
+
+.side{
+    /* margin-top: 5px;
+    margin-left: 5px; */
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 100px 0px;
+    background-color: darkgray;
+    color: white;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+
+19. Find number of days in a given month
+Function `findDaysInMonth()` finds the number of days in a given month of
+a year.
+1. If month is outside the range of 1 and 12 print “Invalid month”.
+2. If month is equal to 2 ie, February print “29 days” if leap year
+else print “28 days” .
+3. Else if month is equal to 4, 6, 9 or 11 print “30 days”.
+4. Else print “31 days”.
+
+     -->
+
+<script>
+
+    function findDaysInMonth(month,year) {
+        let no_days=0;
+        if(month<1 || month>12){
+            no_days="invalid";
+        }else if(month==2){
+            if(year%4 == 0 && year%100 != 0 || year%400 ==0){
+                no_days=29;
+            }else{
+                no_days=28;
+            }
+        }else if(month==4 || month==6 || month==9 || month==11){
+            no_days=30;
+        }else{
+            no_days=31;
+        }
+        return no_days;
+    }
+    console.log(findDaysInMonth(2,2001)); 
+
+
+</script>
+
+
+
+</body>
+</html>

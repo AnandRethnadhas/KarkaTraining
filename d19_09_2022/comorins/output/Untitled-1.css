@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* mobile view starts here */
+
+@media(min-width:575px){
+
+    .comp_name{
+        text-align: center;
+    
+    }
+    nav ul{
+        background-color: lightgray;
+    }
+    nav li{
+        display: inline-block;
+        color: aliceblue;
+        padding: 5px;
+    }
+    nav li:last-child{
+        float: right;
+    }
+    .left, .right{
+        display: inline-block;
+    }
+    .left {
+        width: 70%;
+        vertical-align: top;
+    }
+    .left_top {
+        margin: 44px;
+    }
+    .left_bottom {
+        margin: 40px;
+    }
+    .left image{
+        
+    }
+    .right {
+        width: 29%;
+    }
+    .about, .popular, .follow{
+        margin: 30px;
+    }
+    .foot{
+        background-color: darkcyan;
+        text-align: center;
+    }
+
+}
+
+/* mobile view ends here */
+
+
+/* tab starts here */
+
+@media(min-width:767px){
+
+    .comp_name{
+        text-align: center;
+    
+    }
+    nav ul{
+        background-color: lightgray;
+    }
+    nav li{
+        /* display: inline-block; */
+        color: aliceblue;
+        /* padding: 5px; */
+    }
+    /* nav li:last-child{
+        float: right;
+    } */
+    .left, .right{
+        /* display: inline-block; */
+    }
+    .left {
+        width: 70%;
+        vertical-align: top;
+    }
+    .left_top {
+        /* margin: 44px; */
+    }
+    .left_bottom {
+        /* margin: 40px; */
+    }
+    .left image{
+        
+    }
+    .right {
+        width: 29%;
+    }
+    .about, .popular, .follow{
+        margin: 30px;
+    }
+    .foot{
+        background-color: darkcyan;
+        text-align: center;
+    }
+
+}
+
+/* tab ends here */
+
+
+/* big screen starts here */
+
+@media(min-width:991px){
+    .comp_name{
+        text-align: center;
+    
+    }
+    nav ul{
+        background-color: lightgray;
+    }
+    nav li{
+        display: inline-block;
+        color: aliceblue;
+        padding: 5px;
+    }
+    nav li:last-child{
+        float: right;
+    }
+    .left, .right{
+        display: inline-block;
+    }
+    .left {
+        width: 70%;
+        vertical-align: top;
+    }
+    .left_top {
+        margin: 44px;
+    }
+    .left_bottom {
+        margin: 40px;
+    }
+    .left image{
+        
+    }
+    .right {
+        width: 29%;
+    }
+    .about, .popular, .follow{
+        margin: 30px;
+    }
+    .foot{
+        background-color: darkcyan;
+        text-align: center;
+    }
+    
+}
+
+/* big screen ends here */

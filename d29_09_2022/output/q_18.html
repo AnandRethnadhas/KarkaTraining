@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 18. Find the grade for input marks
+Function `findGrade()` to find the grade of the student based on the input
+marks.
+1. Print “S grade” if marks is between 90 and 100.
+2. Print “A grade” if marks is between 80 and 90.
+3. Print “B grade” if marks is between 70 and 80.
+4. Print “C grade” if marks is between 60 and 70.
+5. Print “D grade” if marks is between 50 and 60.
+6. Print “E grade” if marks is between 40 and 50.
+7. Print “Student has failed” if marks is between 0 and 40.
+8. Else print “Invalid marks”. -->
+
+
+    <script>
+        
+        let grade="", mark=[58,35,92,84,40]
+        
+        function assignGrade(score) {
+            if (score<=100 && score>=91) {
+                grade="S";
+            }else if (score<=90 && score>=81) {
+                grade="A";
+            }else if (score<=80 && score>=71) {
+                grade="B";
+            }else if (score<=70 && score>=61) {
+                grade="C";
+            }else if (score<=60 && score>=51) {
+                grade="D";
+            }else if (score<=50 && score>=40) {
+                grade="E";
+            }else if (score<40) {
+                grade="Student has failed";
+            }else{
+                grade="Invalid marks";
+            }
+            return grade;
+        }
+        console.log("Students Grade List");
+        for(let i=0;i<mark.length;i++){
+            grade=assignGrade(mark[i]);
+            console.log("Grade: " + grade);
+        }
+
+    </script>
+
+
+</body>
+</html>

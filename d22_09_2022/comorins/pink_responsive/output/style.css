@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    /* border: 1px solid blue; */
+}
+body{
+    background-color: gray;
+}
+.local_pink{
+
+    background-color: pink;
+}
+.local_white{
+    background-color: white;
+    margin-right: 5px;
+}
+.local_align{
+     padding: 10px;
+}
+.top_mar{
+    margin-top: 5px;
+}

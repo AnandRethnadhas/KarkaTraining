@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        10. Write a JS code to find the power of a number using for loop
+Function numPower() to returns power of number for provided exponential
+value using for loop.
+     -->
+
+
+     <script>
+        let value=2,power=3
+        function numPower(base,power) {
+            let power_value=base;
+            for(i=0;i<power-1;i++){
+            power_value = power_value*base;
+            // console.log(power_value);
+            }
+            return power_value;
+        }
+        power_value=numPower(value,power);
+        console.log(value + " power " + power + " is " + power_value);
+     </script>
+</body>
+</html>

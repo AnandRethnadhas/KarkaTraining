@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+2. The World Translator
+● Write a function named helloWorld that:
+○ takes 1 argument, a language code (e.g. "es", "de", "en")
+○ returns "Hello, World" for the given language, for atleast 3
+languages. It should default to returning English.
+● Call that function for each of the supported languages and log the result
+to make sure it works
+     -->
+
+
+    <script>
+        
+        let lang_code=["fr","ma","ta"];
+        let word="Hello, World";
+        let language="";
+        
+        function helloWorld(code) {
+            let lang=""; 
+            //  console.log(code);
+            if (code=="fr") {
+                lang="French";
+            } else if(code=="ma") {
+                lang="Malayalam";
+            } else if(code=="ta"){
+                lang="Tamil";
+            }else{
+                lang="English";
+            }
+            return lang;
+        }
+
+        //helloWorld(language);
+        //console.log(language);
+        for(i=0;i<lang_code.length;i++){
+        language=helloWorld(lang_code[i]);
+        console.log(language);
+        }
+        // helloWorld(lang_code[1]);
+        // helloWorld(lang_code[2]);
+        
+    </script>
+</body>
+</html>

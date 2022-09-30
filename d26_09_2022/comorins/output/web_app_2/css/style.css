@@ -1,0 +1,173 @@
+.link_nav{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: #1C1E21;
+}
+
+.top_white{
+    padding-top: 335px;
+}
+
+.hero_img{
+    width: 557px;
+    height: 417px;
+}
+.future_text h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 74px;
+}
+.future_info{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+}
+.future_text a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.better h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.24em;
+    
+    color: #677B8C;
+    
+}
+
+.better p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #232323;
+}
+
+.social_media.messenger,.social_media.facebook,.social_media.instagram{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: 0.01em;
+color: #232323;
+}
+
+.div_commit.dat{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    color: #3578EA;
+}
+
+.div_commit.h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    color: #3578EA;
+}
+
+.div_commit.read{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.announce{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #344854;
+}
+
+.sep_news{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #344854;
+}
+
+.share{
+    position: relative;
+}
+
+.share_read{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height */
+    color: #FFFFFF;
+
+    position: absolute;
+    top: 46px;
+    left: 128px;
+}
+
+.share_img{
+    position: absolute;
+    top: 62.5px;
+    left: 92.33px;
+}
+
+.share_text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 47px;
+    /* or 134% */
+    color: #FFFFFF;
+        
+    position: absolute;
+    top: 244px;
+    left: 82px;
+    width: 50%;
+}
+
+.share_qi{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #FFFFFF;
+
+    position: absolute;
+    top: 476px;
+    left: 82px;
+}

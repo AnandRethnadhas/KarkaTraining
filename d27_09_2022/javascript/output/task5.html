@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="" onload="form_onload();"> -->
+        <input id="no1" type="text"/>
+        <button onclick="add();">add</button>
+        <ul id="ulid"></ul>
+    <!-- </form> -->
+
+    <script>
+        let list=[];
+        // function form_onload(){
+        //     document.getElementById("no1").focus();
+        // }
+        function add(){
+            let todo=document.getElementById("no1").value;
+            list.push(todo);
+            show(list);
+            document.getElementById("no1").value=""; //empty text box
+            document.getElementById("no1").focus(); //set ocus to text box
+        }
+        // creating list 
+        function show(list_arr) {
+            let ele="";
+            for(let i=0;i<list_arr.length;i++ ){
+                ele=ele+"<li>"+list_arr[i]+"</li>";
+            }
+            document.getElementById("ulid").innerHTML=ele;  //showing the list
+        }
+    </script>
+</body>
+</html>

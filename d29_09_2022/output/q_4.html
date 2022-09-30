@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+4. The Pluralizer
+● Write a function named pluralize that:
+○ takes 2 arguments, a noun and a number.
+○ returns the number and pluralized form, like "5 cats" or "1 dog".
+● Call that function for a few different scores and log the result to make
+sure it works.
+● Bonus: Make it handle a few collective nouns like "sheep" and "geese".
+     -->
+     <script>
+        function pluralize(count,name) {
+            if(count==1){
+                console.log(count + " " + name);
+            }else {
+                console.log(count + " " + name + "s");
+            }
+        }
+       console.log(pluralize(1,"cat"));
+        console.log(pluralize(14,"dog"));
+        console.log(pluralize(1,"cow"));
+        console.log(pluralize(8,"sheep"));
+
+
+     </script>
+     
+</body>
+</html>

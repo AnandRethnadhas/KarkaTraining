@@ -1,0 +1,92 @@
+/* *{
+    margin: 0;
+    padding: 0px;
+} */
+header{
+    background-color: lightgray;
+
+}
+.nav_bar{
+    background-color: lightgray;
+    text-align: right;
+
+}
+.logo{
+    display: inline-block;
+    padding: 10px;
+}
+.nav_ul{
+    margin: 0px;
+    padding-right: 40px;
+}
+.nav_ul .logo:first-child{
+    float: left;
+}
+.row{
+    /* background-color: lightgray; */
+    width: 60%;
+    margin: 0 auto;
+    
+}
+.col_intro{
+    /* width: 80%; */
+    border: 1px solid red;
+    display: inline-block;
+    text-align: center;
+}
+.col_feature{
+    /* width: 80%; */
+    /* border: 1px solid red; */
+    background-color: darkgray;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+/* .row{
+    background-color: gray;
+    vertical-align: top;
+    padding: 55px;
+} */
+/* .col:last-child */
+.secmdiv{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sdiv{
+    border: 1px solid blue;
+    display: inline-block;
+    margin: 3px;
+    width: 32%;
+    height: 250px;
+    background-color: lightgrey;
+}
+.foot_ul{
+    background-color: lightgray;
+    margin: 9px;
+}
+.fli{
+    display: inline-block;
+}
+.fli:last-child{
+    float: right;
+    /* vertical-align: middle; */
+    padding-right: 50px;
+    transform: translate(0px, 21px);
+}
+.foot_ul{}
+.foot_ul li{
+    padding-left: 10px;
+    padding-right: 10px;  
+}
+.twitter{
+    width: 60%;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+h4{
+    margin: 0px;
+    padding: 9px;
+}
+

@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    border: 1px solid red;
+}
+body{
+    border: 1px solid red;
+    width: 100%;
+    /* background-image: url(Asset41.png); */
+}
+header{
+    /* padding-top: 54px;
+    padding-bottom: 54px; */
+}
+.logo_top, nav{
+    display: inline-block;
+    border: 1px solid blue;
+}
+header .logo_top{
+    width: 24%;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+header nav{
+    width: 74%;
+    text-align: center;
+    /* vertical-align: middle; */
+
+}
+header ul li{
+    display: inline-block;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #494D56;
+    padding: 9px;
+}
+header ul li:last-child{
+border: 5px solid;
+background-color: #EC483C;
+padding: 1px;
+color: #FFFFFF;
+border-radius: 1px;
+}
+header ul li:first-child{
+    color: #EC483C;
+}
+header .image{
+    width: 573px;
+height: 341px;
+}
+.banner_text, .banner_image{
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+}
+.banner_text{
+    vertical-align: middle;
+    text-align: center;
+
+}
+.banner_image{
+    width: 573px;
+height: 341px;
+}
+.banner_top{
+    text-align: center;
+    background-image: url(Asset41.png);
+}
+.mail{
+    background-color: #1F2631;
+}
+.mail input{
+    color: #FFFFFF;
+}
+.mail p{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+
+    color: #FFFFFF;
+}
+.mail image{
+    display: inline-block;
+    width: 19%;
+}
+.mail text{
+    display: inline-block;
+    width: 39%;
+}
+.mail input{
+    display: inline-block;
+    width: 39%;
+}
+.sec_2 ul{
+    text-align: center;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 154.4%;
+
+}
+.sec_2 li{
+    display: inline-block;
+    background-color: #E5E5E5;
+    padding: 10px;
+    vertical-align: middle;
+    border-radius: 6px;
+}
+.sec_2 li:last-child{
+    background-color: #FFFFFF;
+}
+.sec_2 li:first-child{
+    background-color: #EC483C;
+}
