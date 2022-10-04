@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="click();">Storage</button>
+
+
+    <script>
+
+       // function click(){
+        //    alert("yes");
+            //localStorage.setItem("fname","dany");
+            //sessionStorage.setItem("lname","casper");
+       // }
+        let items=['mobile','headset','tablet'];
+        console.log(typeof items);
+        console.log(items);
+        let local_items=JSON.stringify(items);
+        console.log(typeof local_items);
+        console.log(local_items);
+        localStorage.setItem("items",local_items);
+        let user_items=JSON.parse(localStorage.getItem("items"));
+        console.log(typeof user_items);
+        console.log(user_items);
+    </script>
+</body>
+</html>
