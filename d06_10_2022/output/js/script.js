@@ -94,8 +94,10 @@ function display(){
 function save_local() {
     if(!localStorage.getItem("resume")){
         localStorage.setItem("resume",JSON.stringify([]));
+      //  alert("new");
     }
     let all_resume = JSON.parse(localStorage.getItem("resume"));
+    
     all_resume.push(resume);
     console.log(all_resume);
     localStorage.setItem("resume",JSON.stringify(all_resume));
@@ -114,8 +116,8 @@ function show(){
         let all_resume = JSON.parse(localStorage.getItem("resume"));
         console.log(all_resume.length);
 
-        detail = JSON.parse(localStorage.getItem("resume")); //locakstorage to detail object type
-        document.getElementById("detail").innerHTML = JSON.stringify(detail[0].fname);
+        //detail = JSON.parse(localStorage.getItem("resume")); //locakstorage to detail object type
+        document.getElementById("detail").innerHTML =JSON.stringify(all_resume[1].fname);
     }
 
 }
