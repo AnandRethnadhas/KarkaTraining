@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<body>
+  <div>  
+
+Name<input type="text" onkeyup="add_detail('fname',this.value)"><br/>
+Email<input type="text" onkeyup="add_detail('email',this.value)"><br/>
+Phone<input type="text" onkeyup="add_detail('phone',this.value)"><br/>
+
+
+Skills
+<input type="text" onkeyup="add_detail('skills',this.value,0)">
+<input type="text" onkeyup="add_detail('skills',this.value,1)">
+<input type="text" onkeyup="add_detail('skills',this.value,2)">
+<input type="text" onkeyup="add_detail('skills',this.value,3)">
+<br/><br/><br/>
+<div>
+
+    <div>
+        <h3>Educational Details</h3>
+        <table>
+        <tr>
+            <th>#</th>
+          <td>
+            Course
+          </td>
+          <td>
+            Year
+          </td>
+          <td>
+            Institute
+          </td>
+          <td>
+            Percentage
+          </td>
+        </tr>
+        <tr><th>1</th>
+            <td>
+                <input type="text" onkeyup="add_detail('education',this.value,0,'course')">
+            </td>
+            <td>
+                <input type="text" onkeyup="add_detail('education',this.value,0,'year')">
+            </td>
+            <td>
+                <input type="text" onkeyup="add_detail('education',this.value,0,'institue')">
+            </td>
+            <td>
+                <input type="text" onkeyup="add_detail('education',this.value,0,'percentage')">
+            </td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>
+                <input type="text" onkeyup="add_detail('education',this.value,1,'course')">
+            </td>
+            <td>
+                <input type="text" onkeyup="add_detail('education',this.value,1,'year')">
+            </td>
+            <td>
+                <input type="text" onkeyup="add_detail('education',this.value,1,'institue')">
+            </td>
+            <td>
+                <input type="text" onkeyup="add_detail('education',this.value,1,'percentage')">
+            </td>
+          </tr>
+        </table>       
+    </div>
+    <div>
+        Experience<input type="text" onkeyup="add_detail('experience',this.value)"><br/>
+        Interest<input type="text" onkeyup="add_detail('interest',this.value)">
+
+    </div>
+    <div><h3>Certification</h3>
+        <table>
+            <tr>
+                <th>#</th>
+              <td>
+                Course Name
+              </td>
+              <td>
+                Duration
+              </td>
+              <td>
+                Institute
+              </td>
+            </tr>
+            <tr><th>1</th>
+                <td>
+                    <input type="text" onkeyup="add_detail('certification',this.value,0,'course_name')">
+                </td>
+                <td>
+                    <input type="text" onkeyup="add_detail('certification',this.value,0,'duration')">
+                </td>
+                <td>
+                    <input type="text" onkeyup="add_detail('certification',this.value,0,'institue')">
+                </td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>
+                    <input type="text" onkeyup="add_detail('certification',this.value,1,'course_name')">
+                </td>
+                <td>
+                    <input type="text" onkeyup="add_detail('certification',this.value,1,'duration')">
+                </td>
+                <td>
+                    <input type="text" onkeyup="add_detail('certification',this.value,1,'institue')">
+                </td>
+              </tr>
+            </table>
+    </div>
+    <div>
+    <h3>Language Known</h3>
+    <input type="text" onkeyup="add_detail('language_known',this.value,0)">
+    <input type="text" onkeyup="add_detail('language_known',this.value,1)">
+    <input type="text" onkeyup="add_detail('language_known',this.value,2)">
+    <input type="text" onkeyup="add_detail('language_known',this.value,3)">
+
+    </div>
+    <div>
+      <h3>Projects</h3>
+      <table>
+        <tbody>
+          <th>
+            <tr>
+            <td>
+              Title
+            </td>
+            <td>
+              Abstract
+            </td>
+            <td>
+              Technical Details
+            </td>
+          </tr>
+          </th>
+          <tr>
+            <td>
+              <input type="text" onkeyup="add_detail('projects',this.value,0,'title')">
+            </td>
+            <td>
+              <input type="text" onkeyup="add_detail('projects',this.value,0,'abstract')">
+            </td>
+            <td>
+              <input type="text" onkeyup="add_detail('projects',this.value,0,'tech_details')">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" onkeyup="add_detail('projects',this.value,1,'title')">
+            </td>
+            <td>
+              <input type="text" onkeyup="add_detail('projects',this.value,1,'abstract')">
+            </td>
+            <td>
+              <input type="text" onkeyup="add_detail('projects',this.value,1,'tech_details')">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- <div>
+      <h3>Personal Details:</h3>
+      Father's Name <input type="text" onkeyup="add_detail('personal_details',this.value,'','farher_name')"><br/>
+      DOB <input type="text" onkeyup="add_detail('personal_details',this.value,'','dob')"><br/>
+      Martial Status<input type="text" onkeyup="add_detail('personal_details',this.value,'','marial_status')">
+    </div> -->
+    <button type="submit" onclick="save_local()">Submit</button>
+    <button onclick="show()">show</button>
+</div>
+
+<code id="resume_detail"></code><br><br>
+<code id="detail"></code><br><br>
+
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

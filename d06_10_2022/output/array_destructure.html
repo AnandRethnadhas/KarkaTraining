@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Destructuring</title>
+</head>
+<body>
+    
+
+    <script>
+        // let a = 9;  //swaping two numbers
+        // let b = 6;
+        // console.log(a,b);
+        // [a,b] = [b,a];
+
+        // console.log(a,b);
+
+    //             //array to variables
+    //     let nums = [3,7,5,9,2,6];
+    //     console.log(nums);
+    //    // let a=12;
+    //     [a,b,c,d,e,f] = [3,7,5,9,2,6];
+        
+    //    console.log(a,d);
+
+        //strings to variables
+
+        let words = "my name is dany casper anand dhas".split(' ');
+        console.log(words);
+        //[a,b,c,d,e,f,g] = words;
+        [a,b,,d,...g] = words;
+        console.log(g);
+        console.log(d);
+        console.log(document.title);
+        
+
+    </script>
+</body>
+</html> 
