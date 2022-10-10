@@ -54,11 +54,10 @@
 
 
 
-
-
-let resume={};
+let resume = {};
 
 function add_detail(key,value,index=null,indexKey=null){
+
 
 if(key == 'skills' || key == 'language_known'){
     if(!resume[key]){
@@ -86,25 +85,37 @@ else{
 
 
 function display(){
+    // alert("inside display")
     document.getElementById("resume_detail").innerHTML=JSON.stringify(resume);
 }
 
+
+
 function save_local() {
-    localStorage.setItem("resume",JSON.stringify(resume));
+    if(!localStorage.getItem("resume")){
+        localStorage.setItem("resume",JSON.stringify([]));
+    }
+    let all_resume = JSON.parse(localStorage.getItem("resume"));
+    all_resume.push(resume);
+    console.log(all_resume);
+    localStorage.setItem("resume",JSON.stringify(all_resume));
+   // location.reload();
+
     //sessionStorage.setItem("resume",JSON.stringify(resume));
 }
 
+//show all resumes from local storage
 function show(){
-    let detail = {};
-    //alert(typeof detail);
+    if(!localStorage.getItem("resume")){        //check for resume localstorage object
+        alert("Enter a resume");
+        document.getElementById("fname").focus();
+    } else{
+        alert("sonthing to show");
+        let all_resume = JSON.parse(localStorage.getItem("resume"));
+        console.log(all_resume.length);
 
-    // let person = {
-    //     fname : "Dany",
-    //     lname : "casper"
-    // };
-    detail = JSON.parse(localStorage.getItem("resume")); //locakstorage to detail object type
-    // alert(typeof detail);
-    // alert(detail.fname);
-    
-    document.getElementById("detail").innerHTML = JSON.stringify(detail.fname);
+        detail = JSON.parse(localStorage.getItem("resume")); //locakstorage to detail object type
+        document.getElementById("detail").innerHTML = JSON.stringify(detail[0].fname);
+    }
+
 }
