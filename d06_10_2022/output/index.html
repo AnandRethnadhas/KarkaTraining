@@ -8,17 +8,18 @@
 </head>
 <body>
   <div>  
-
+<h2><u> Enter your resume details </u></h2>
 Name<input type="text" id="fname" onkeyup="add_detail('fname',this.value)"><br/>
 Email<input type="text" onkeyup="add_detail('email',this.value)"><br/>
 Phone<input type="text" onkeyup="add_detail('phone',this.value)"><br/>
+<h3>Objective</h3>
+<textarea name="" id="" cols="30" rows="10"></textarea>
 
-
-Skills
-<input type="text" onkeyup="add_detail('skills',this.value,0)">
-<input type="text" onkeyup="add_detail('skills',this.value,1)">
-<input type="text" onkeyup="add_detail('skills',this.value,2)">
-<input type="text" onkeyup="add_detail('skills',this.value,3)">
+<h3>Skills</h3>
+1<input type="text" onkeyup="add_detail('skills',this.value,0)"><br>
+2<input type="text" onkeyup="add_detail('skills',this.value,1)"><br>
+3<input type="text" onkeyup="add_detail('skills',this.value,2)"><br>
+4<input type="text" onkeyup="add_detail('skills',this.value,3)">
 <br/><br/><br/>
 <div>
 
@@ -72,8 +73,24 @@ Skills
         </table>       
     </div>
     <div>
-        Experience<input type="text" onkeyup="add_detail('experience',this.value)"><br/>
-        Interest<input type="text" onkeyup="add_detail('interest',this.value)">
+      <table>
+        <tr>
+          <td>
+            Experience<br/>
+          </td>
+          <td>
+            <input type="text" onkeyup="add_detail('experience',this.value)"> In years
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Interest
+          </td>
+          <td>
+            <input type="text" onkeyup="add_detail('interest',this.value)">
+          </td>
+        </tr>
+      </table>
 
     </div>
     <div><h3>Certification</h3>
@@ -117,10 +134,10 @@ Skills
     </div>
     <div>
     <h3>Language Known</h3>
-    <input type="text" onkeyup="add_detail('language_known',this.value,0)">
-    <input type="text" onkeyup="add_detail('language_known',this.value,1)">
-    <input type="text" onkeyup="add_detail('language_known',this.value,2)">
-    <input type="text" onkeyup="add_detail('language_known',this.value,3)">
+    1<input type="text" onkeyup="add_detail('language_known',this.value,0)"><br>
+    2<input type="text" onkeyup="add_detail('language_known',this.value,1)"><br>
+    3<input type="text" onkeyup="add_detail('language_known',this.value,2)"><br>
+    4<input type="text" onkeyup="add_detail('language_known',this.value,3)">
 
     </div>
     <div>
@@ -174,11 +191,16 @@ Skills
     <button type="submit" onclick="save_local()">Submit</button>
     <button onclick="show()">show</button>
 </div>
-
 <code id="resume_detail"></code><br><br>
 <code id="detail"></code><br><br>
-
 </div>
+<div>
+  <ul id="ul-list">
+   
+  </ul>
+</div>
+
+
 <script src="js/script.js"></script>
 </body>
 </html>

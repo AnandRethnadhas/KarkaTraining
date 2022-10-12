@@ -74,7 +74,7 @@ if(key == 'skills' || key == 'language_known'){
             resume[key][index] = {};
             }
         resume[key][index][indexKey] = value;
-} 
+    } 
 
 else{
     resume[key] = value;
@@ -107,17 +107,25 @@ function save_local() {
 }
 
 //show all resumes from local storage
-function show(){
+//function show(){
     if(!localStorage.getItem("resume")){        //check for resume localstorage object
         alert("Enter a resume");
         document.getElementById("fname").focus();
     } else{
-        alert("sonthing to show");
+       // alert("show");
         let all_resume = JSON.parse(localStorage.getItem("resume"));
         console.log(all_resume.length);
+        let ele="";
+
+        //getting the name of all resumes
+        for(let i=0;i<all_resume.length;i++){
+            ele += "<li> <a href='resume_page.html?fname=" + all_resume[i].fname + "'target='_blank'>" + all_resume[i].fname + "</a></li>";
+            //alert(all_resume[i].fname)
+        }
+        document.getElementById("ul-list").innerHTML = ele; 
 
         //detail = JSON.parse(localStorage.getItem("resume")); //locakstorage to detail object type
-        document.getElementById("detail").innerHTML =JSON.stringify(all_resume[1].fname);
+       // document.getElementById("detail").innerHTML =JSON.stringify(all_resume[0].fname);
     }
 
-}
+//}
