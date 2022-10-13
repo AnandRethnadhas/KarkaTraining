@@ -12,22 +12,52 @@
      pname : "nokia8090",
      phone : 9876543210,
      price : 5000
-    picture : "url" -->
+    picture : "url",
+    category :  "bike"-->
+    
 
 <header>
     <h3 class="text-center text-primary">OLX</h3>
     <hr>
     <div class="text-right">
-    <label>Sign In</label>
-    <input type="text"><br>
-    Password
-    <input type="password">
+    <label>User Name</label>
+    <input type="text" id="username"><br>
+    <label> Password</label>
+    <input type="password" id="password"><br>
+    <button type="button" class="btn btn-primary" onclick="signIn()">Sign In</button>
+    <button type="button" class="btn btn-warning" onclick="signInClear()">Clear</button>
+    <a href="signup.html">New User? SignUp</a>
+
 </div>
 <hr>
-<div>
-    <iframe src="" frameborder="0"></iframe>
+<div class="row">
+    <div class="col-3">
+        <img src="images/hero.jfif" onclick="checkLogIN()" title="click for details"/>
+        <p>price</p><p>50000</p>
+    </div>
+    <div class="col-3">
+        <img src="images/tvs.jfif" onclick="checkLogIN()" title="click for details"/>
+        <p>price</p><p>70000</p>
+    </div>
+    <div class="col-3">
+        <img src="images/bmw1.jfif" onclick="checkLogIN()" title="click for details"/>
+        
+        <p>price</p><p>450000</p>
+    </div>
 </div>
+<hr>
 </header>
-
+    <div>
+        <p>
+           <a href="signup.html">Sales your items</a>
+        </p>
+        <hr>
+        
+    </div>
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>
+
+<!-- to download an image 
+onclick="window.open(this.src)" -->
