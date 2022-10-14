@@ -26,6 +26,17 @@ let olxuser = "";
 let username = "";
 let userpass = "";
 let user_detail = "";
+document.getElementById("username").focus();
+
+let loggedin = [];
+let current_user = {
+    userid : "",
+    isActive : Boolean
+}
+
+//getting values from localstorage for logged-in users
+//loggedin = JSON.parse(localStorage.getItem("logged_in"));
+
 
 function checkLogIN(){
     alert("Sign-in to see the details");
@@ -61,7 +72,16 @@ function signIn(){
         //alert(user_detail.length);
         for(let i=0;i<user_detail.length;i++){
             if(username == user_detail[i].username && userpass == user_detail[i].pass){
-                alert(user_detail[i].userid);
+                current_user.userid = i;
+                current_user.isActive = true;
+
+                loggedin.push(current_user);    //store to local storage
+                localStorage.setItem("logged_in",JSON.stringify(loggedin));
+                
+                document.getElementById("topname").innerHTML = "Hello " + username.toUpperCase();
+                 document.getElementById("login-box").hidden = true;
+                 document.getElementById("signout").hidden = false;
+                //alert(user_detail[i].userid);
             }
         }
     }
