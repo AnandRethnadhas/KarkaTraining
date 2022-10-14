@@ -22,7 +22,10 @@
 document.title = "OLX - Home";
 
 //setting the user signin checkup
-let olxuser
+let olxuser = "";
+let username = "";
+let userpass = "";
+let user_detail = "";
 
 function checkLogIN(){
     alert("Sign-in to see the details");
@@ -47,6 +50,20 @@ function signIn(){
         alert("Enter Password");
         document.getElementById("password").focus();
     }else{
-        alert("ok");
+        //get the values of username and password
+        username = document.getElementById("username").value;
+        userpass = document.getElementById("password").value;
+
+        //get all records from localStorage
+        user_detail = JSON.parse(localStorage.getItem("signup_users"));
+
+        //checking for the current user
+        //alert(user_detail.length);
+        for(let i=0;i<user_detail.length;i++){
+            if(username == user_detail[i].username && userpass == user_detail[i].pass){
+                alert(user_detail[i].userid);
+            }
+        }
     }
 }
+
