@@ -39,14 +39,17 @@ let isLoggedIn = false;
 
 user_detail = JSON.parse(localStorage.getItem("signup_users"));
 loggedin = JSON.parse(localStorage.getItem("logged_in"));
-console.log(loggedin);
+//console.log(loggedin);
 
+//when click on images
 function checkLogIN(){
     alert("Sign-in to see the details");
     document.getElementById("username").focus();
 }
  //checkLogIN();
-//clearing texboxes
+
+
+ //clearing texboxes
 function signInClear(){
     //alert("signInClear");
     document.getElementById("username").value = "";    
@@ -63,8 +66,12 @@ function signInValidation(){
 
 }
 
+
+
 //validating signin page user content
-function signIn(){
+
+function valSignIn(){
+    
     if(!document.getElementById("username").value){
         alert("Enter User Name");
         document.getElementById("username").focus();
@@ -72,33 +79,49 @@ function signIn(){
         alert("Enter Password");
         document.getElementById("password").focus();
     }else{
+        return true;
+    }
+
+}
+
+//check for logged in
+function verifyLogIn(){ 
+
+if(!loggedin == null){
+    for(let i=0;i<loggedin.length;i++){
+        if(user_id == loggedin[i].userid){
+            isLoggedIn = true;
+        
+        }else {isLoggedIn = false;}
+  //  alert(user_id);//if(user_detail.userid)
+    }
+}
+return isLoggedIn;
+}
+
+
+
+function signIn(){
+    //call to validate 
+    if(valSignIn() == true){
         //get the values of username and password
         username = document.getElementById("username").value;
         userpass = document.getElementById("password").value;
-        
-        //get all records from localStorage
 
         //checking for the current user
-        //alert(user_detail.length);
+ //       alert(username);
         for(let i=0;i<user_detail.length;i++){
             if(username == user_detail[i].username){
                 user_id = user_detail[i].userid;
-                //alert(user_id);
+                // alert(user_id);
             }
         }
-            for(let i=0;i<loggedin.length;i++){
-                if(user_id == loggedin[i].userid){
-                    isLoggedIn = true;
-                }
-
-                
-          //  alert(user_id);//if(user_detail.userid)
-            }
-        
-        
-        
-
-        for(let i=0;i<user_detail.length;i++){
+        //checking for logged in
+        //already at logged-in list? call the function to check
+        verifyLogIn();
+        if(isLoggedIn == true){
+            //alert(isLoggedIn);
+            for(let i=0;i<user_detail.length;i++){
             //checking at logged in 
             //alert(isLoggedIN);
             if(username == user_detail[i].username && userpass == user_detail[i].pass && isLoggedIn == false){     //checking at signup
@@ -115,23 +138,52 @@ function signIn(){
                 //alert(user_detail[i].userid);
             
             }else{document.getElementById("topname").innerHTML = "Hello " + username.toUpperCase();
-            document.getElementById("login-box").hidden = true;
-            document.getElementById("signout").hidden = false;
+                document.getElementById("login-box").hidden = true;
+                document.getElementById("signout").hidden = false;
             }
         }
+    
+        }else{
+            //push the new logged user into localstorage
+            alert("please sign up to login userid" + user_id);
+          
+            current_user.userid = user_id;
+            current_user.isActive = true;
+            //loggedin = [];
+            loggedin.push(current_user);
+
+            window.localStorage.setItem("logged_in", JSON.stringify(loggedin));
+            alert("check localstorage");
+            showLogOut();
     }
 }
+}
 
+// show logout button and username with hello
+function showLogOut(){
+    document.getElementById("topname").innerHTML = "Hello " + username.toUpperCase();
+    document.getElementById("login-box").hidden = true;
+    document.getElementById("signout").hidden = false;
+}
 
+// hide logout button and username
+function hideLogOut(){
+    document.getElementById("login-box").hidden = false;
+    document.getElementById("signout").hidden = true;
+    document.getElementById("topname").innerHTML = "";
+    signInClear();
+}
 //sign-out function
 
 function signOut(){
-    alert("yes");
+    hideLogOut();
+   // alert("yes");
+    
     loggedin = JSON.parse(localStorage.getItem("logged_in"));
-    alert(typeof loggedin);
-    alert(loggedin[0].isActive);
-    console.log(username);
-    console.log(user_id);
+    // alert(typeof loggedin);
+    // alert(loggedin[0].isActive);
+    // console.log(username);
+    // console.log(user_id);
     for(let i=0;i<loggedin.length;i++){         //checking for active user and make the user to isActive false
         if(loggedin[i].isActive == true){
             loggedin[i].isActive = false;
