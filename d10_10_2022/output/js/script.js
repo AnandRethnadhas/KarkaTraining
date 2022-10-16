@@ -126,11 +126,18 @@ function signIn(){
 //sign-out function
 
 function signOut(){
-    //alert("yes");
-    //loggedin = JSON.parse(localStorage.getItem("logged_in"));
-    loggedin[user_detail]
+    alert("yes");
+    loggedin = JSON.parse(localStorage.getItem("logged_in"));
+    alert(typeof loggedin);
+    alert(loggedin[0].isActive);
+    console.log(username);
+    console.log(user_id);
     for(let i=0;i<loggedin.length;i++){         //checking for active user and make the user to isActive false
         if(loggedin[i].isActive == true){
+            loggedin[i].isActive = false;
+        }
+        console.log(loggedin[i].isActive);
+      //  if(loggedin[i].isActive == true){
             //loggedin[i].isActive = false;
 
            //loggedin.push(current_user);
@@ -142,10 +149,10 @@ function signOut(){
             //loggedin[current_user.userid].user;    //store to local storage
             //loggedin.splice(i,1); //removing a logged-out user
             
-        }
+      //  }
         
     }
    
-  // localStorage.setItem("logged_in",JSON.stringify(loggedin));
+  localStorage.setItem("logged_in",JSON.stringify(loggedin));
     
 }
