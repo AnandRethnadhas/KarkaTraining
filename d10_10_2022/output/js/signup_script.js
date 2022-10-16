@@ -13,6 +13,8 @@ function signUpClear(){
     document.getElementById("username").focus();
 }
 
+//validating textboxes
+
 
 //validating username and password
 function signUp(){
@@ -50,8 +52,6 @@ function userDetail(){
     
     signupdetail = JSON.parse(localStorage.getItem("signup_users"));
 
-    //alert(signupdetail.length);
-    //console.log(temp);
     //generating user id
     if(signupdetail == null){
         //  alert("yes" + temp);

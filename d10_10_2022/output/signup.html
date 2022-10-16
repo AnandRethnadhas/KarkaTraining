@@ -9,31 +9,25 @@
 </head>
 <body class="container">
     <header>
-        <h3 class="text-center text-primary">OLX</h3>
+        <h3 class="text-center text-primary"><a href="index.html" class="text-decoration-none"> OLX</a></h3>
     <hr>
         <h3 class="text-center">New User SignUp Page</h3>
     </header>
     <section>
         <div>
             <table><tr><td><label>User Name</label></td>
-            <td><input id="username" type="text"/></td></tr>
+            <td><input id="username" type="text" placeholder="Enter your username"/></td></tr>
             <tr><td><label>Password</label></td>
-            <td><input id="pass1" type="password"/></td></tr>
+            <td><input id="pass1" type="password" placeholder="Enter your password"/></td></tr>
             <tr><td><label>Retype Password</label></td>
-            <td><input id="pass2" type="password"/></td></tr>
+            <td><input id="pass2" type="password" placeholder="Re-enter your password"/></td></tr>
             <tr><td><label>Phone No</label></td>
-                <td><input id="phone" type="number"/></td></tr>
-            <tr><td>
-                <button  class="btn btn-primary" onclick="signUp()">Submit</button>
-                <button  class="btn btn-primary" onclick="signUpClear()">Clear</button>
-            </td>
-            <td></td></tr></table>
-            
-           <br/>
-            
-            <br/>
-            
-            
+                <td><input id="phone" type="number" placeholder="Enter your phone number"/></td></tr>
+            </table>
+        </div>
+        <div>
+            <button  class="btn btn-primary" onclick="signUp()">Submit</button>
+            <button  class="btn btn-primary" onclick="signUpClear()">Clear</button>
         </div>
     </section>
 

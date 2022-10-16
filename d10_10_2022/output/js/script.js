@@ -23,6 +23,7 @@ document.title = "OLX - Home";
 
 //setting the user signin checkup
 let olxuser = "";
+let user_id = "";
 let username = "";
 let userpass = "";
 let user_detail = "";
@@ -32,10 +33,12 @@ let loggedin = [];
 let current_user = {
     userid : "",
     isActive : Boolean
-}
+};
 
-//getting values from localstorage for logged-in users
-//loggedin = JSON.parse(localStorage.getItem("logged_in"));
+let isLoggedIn = false;
+
+user_detail = JSON.parse(localStorage.getItem("signup_users"));
+loggedin = JSON.parse(localStorage.getItem("logged_in"));
 
 
 function checkLogIN(){
@@ -52,6 +55,14 @@ function signInClear(){
 }
 
 
+//getting values from localstorage for logged-in users
+
+
+//alert(loggedin[0].userid);
+function signInValidation(){
+
+}
+
 //validating signin page user content
 function signIn(){
     if(!document.getElementById("username").value){
@@ -64,14 +75,34 @@ function signIn(){
         //get the values of username and password
         username = document.getElementById("username").value;
         userpass = document.getElementById("password").value;
-
+        
         //get all records from localStorage
-        user_detail = JSON.parse(localStorage.getItem("signup_users"));
 
         //checking for the current user
         //alert(user_detail.length);
         for(let i=0;i<user_detail.length;i++){
-            if(username == user_detail[i].username && userpass == user_detail[i].pass){
+            if(username == user_detail[i].username){
+                user_id = user_detail[i].userid;
+                //alert(user_id);
+            }
+        }
+            for(let i=0;i<loggedin.length;i++){
+                if(user_id == loggedin[i].userid){
+                    isLoggedIn = true;
+                }
+
+                
+          //  alert(user_id);//if(user_detail.userid)
+            }
+        
+        
+        
+
+        for(let i=0;i<user_detail.length;i++){
+            //checking at logged in 
+            //alert(isLoggedIN);
+            if(username == user_detail[i].username && userpass == user_detail[i].pass && isLoggedIn == false){     //checking at signup
+                
                 current_user.userid = i;
                 current_user.isActive = true;
 
@@ -79,11 +110,42 @@ function signIn(){
                 localStorage.setItem("logged_in",JSON.stringify(loggedin));
                 
                 document.getElementById("topname").innerHTML = "Hello " + username.toUpperCase();
-                 document.getElementById("login-box").hidden = true;
-                 document.getElementById("signout").hidden = false;
+                document.getElementById("login-box").hidden = true;
+                document.getElementById("signout").hidden = false;
                 //alert(user_detail[i].userid);
+            
+            }else{document.getElementById("topname").innerHTML = "Hello " + username.toUpperCase();
+            document.getElementById("login-box").hidden = true;
+            document.getElementById("signout").hidden = false;
             }
         }
     }
 }
 
+
+//sign-out function
+
+function signOut(){
+    //alert("yes");
+    //loggedin = JSON.parse(localStorage.getItem("logged_in"));
+    loggedin[user_detail]
+    for(let i=0;i<loggedin.length;i++){         //checking for active user and make the user to isActive false
+        if(loggedin[i].isActive == true){
+            //loggedin[i].isActive = false;
+
+           //loggedin.push(current_user);
+
+            
+            //current_user.userid = i;
+            //current_user.isActive = false;
+                        
+            //loggedin[current_user.userid].user;    //store to local storage
+            //loggedin.splice(i,1); //removing a logged-out user
+            
+        }
+        
+    }
+   
+  // localStorage.setItem("logged_in",JSON.stringify(loggedin));
+    
+}
